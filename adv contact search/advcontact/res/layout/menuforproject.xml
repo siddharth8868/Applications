@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <HorizontalScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical" >
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="true" >
+
+                    <TextView
+                        android:id="@+id/saveNametv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="@string/Name"
+                        android:textColor="@color/textcolor00ffcc" />
+
+                    <EditText
+                        android:id="@+id/saveNameet"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/lightSlateBlue" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/empImage"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="2dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" >
+
+                    <TextView
+                        android:id="@+id/savemobiletv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mobile"
+                        android:textColor="@color/textcolor00ffcc" />
+
+                    <EditText
+                        android:id="@+id/savemobileet"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:textColor="@color/lightSlateBlue" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" >
+
+                    <TextView
+                        android:id="@+id/savealtmobiletv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/altmobile"
+                        android:textColor="@color/textcolor00ffcc" />
+
+                    <EditText
+                        android:id="@+id/savealtmobiletv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:textColor="@color/lightSlateBlue" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" >
+
+                    <TextView
+                        android:id="@+id/saveemailtv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email1"
+                        android:textColor="@color/textcolor00ffcc" />
+
+                    <EditText
+                        android:id="@+id/saveEmailet"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/lightSlateBlue" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/saveskilltv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/skill1"
+                        android:textColor="@color/textcolor00ffcc" />
+
+                    <EditText
+                        android:id="@+id/saveskillet"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/lightSlateBlue" />
+
+                    <ImageButton
+                        android:id="@+id/addskillbutton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#00000000"
+                        android:src="@drawable/add" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowskill2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/saveskill2tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/skill2"
+                        android:textColor="@color/textcolor00ffcc" />
+
+                    <EditText
+                        android:id="@+id/saveskill2et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/lightSlateBlue" />
+
+                    <ImageButton
+                        android:id="@+id/addskillbutton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#00000000"
+                        android:src="@drawable/add" />
+
+                    <ImageButton
+                        android:id="@+id/removeskillbutton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#00000000"
+                        android:src="@drawable/cancel" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowskill3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/saveskill3tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/skill3"
+                        android:textColor="@color/textcolor00ffcc" />
+
+                    <EditText
+                        android:id="@+id/saveskill3et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/lightSlateBlue" />
+
+                    <ImageButton
+                        android:id="@+id/removeskillbutton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#00000000"
+                        android:src="@drawable/cancel" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow12"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" >
+
+                    <TextView
+                        android:id="@+id/saveaddresstv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address"
+                        android:textColor="@color/textcolor00ffcc" />
+
+                    <EditText
+                        android:id="@+id/saveaddresset"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/lightSlateBlue" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/buttonex"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="125dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textfor_id"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</ScrollView>
