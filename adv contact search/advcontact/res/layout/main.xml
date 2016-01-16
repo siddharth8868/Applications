@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Select"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageButton
+                android:id="@+id/mainaddbutton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignBottom="@+id/radioGroup1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:onClick="add"
+                android:src="@drawable/adduser" />
+
+            <Button
+                android:id="@+id/bb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/rbname"
+                android:layout_below="@+id/rbskill"
+                android:onClick="next"
+                android:text="Button"
+                android:visibility="gone" />
+
+            
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/select" >
+
+                <RadioButton
+                    android:id="@+id/rbname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="Name" />
+
+                <RadioButton
+                    android:id="@+id/rbskill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/rbname"
+                    android:text="Skill" />
+            </RadioGroup>
+
+            <AutoCompleteTextView
+                android:id="@+id/mainatv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/radioGroup1"
+                android:hint="search here"/>
+                
+                <ListView
+                android:id="@+id/mainlistView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/mainatv" >
+
+            </ListView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
