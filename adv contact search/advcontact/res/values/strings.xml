@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, DatabaseActivity!</string>
+
+    <color name="Mycolor">#99ffcc</color>
+    <color name="RowsyBrown1">#99ffcc</color>
+
+    <string name="app_name">advcontact</string>
+    <string name="add">AddNewContact:</string>
+    <string name="Name">Name:</string>
+    <string name="mobile">Mobile:</string>
+    <string name="altmobile">AltMobile</string>
+    <string name="email1">Email:</string>
+    <string name="altemail1">Alternate Email:</string>
+    <string name="skill3">Skill3:</string>
+    <string name="skill2">Skill2:</string>
+    <string name="skill1">Skill1:</string>
+    <string name="address">Address:</string>
+    <string name="project">Project:</string>
+    <string name="rating">Rating:</string>
+    <string name="experiance">Experiance:</string>
+
+    <color name="textcolor00ffcc">#00ffcc</color>
+    
+    <color name="mybackgroung">#FFFFCC</color>
+     <color name="lightSlateBlue">#736AFF</color>
+
+</resources>
